@@ -1,0 +1,42 @@
+<p>list works!</p>
+
+<table class="table table-hover" *ngIf="brews">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th>
+    <th scope="col">City</th>
+    <th scope="col">State</th>
+    <th scope="col">Country</th>
+    <th scope="col">Phone</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let brew of brews">
+    <td>
+      {{brew.id}}
+    </td>
+    <td>
+      {{brew.name}}
+    </td>
+    <td>
+      {{brew.city}}
+    </td>
+    <td>
+      {{brew.state}}
+    </td>
+    <td>
+      {{brew.country}}
+    </td>
+    <td>
+      {{brew.phone}}
+    </td>
+    <td>
+      <button class="btn" style="background-color: lightblue"><img src="d.svg" alt="Edit"></button>&nbsp;&nbsp;
+      <button class="btn" style="background-color: palevioletred"><img src="d.svg" alt="Delete"></button>
+    </td>
+  </tr>
+  </tbody>
+</table>
